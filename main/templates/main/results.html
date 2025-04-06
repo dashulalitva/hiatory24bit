@@ -1,0 +1,7 @@
+{% extends "main/base4.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/timeline.css' %}">
+    <h1>Результаты теста: {{ test.title }}</h1>
+    <p>Ваш результат: {{ score }} из {{ total_questions }}</p>
+{% endblock %}

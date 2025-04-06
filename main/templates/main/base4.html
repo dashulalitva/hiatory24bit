@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<header class="site-header">
+    <div class="container-inner">  <!-- обертка для контента -->
+        <div class="logo">
+            <a href="/test">Тест</a>
+        </div>
+
+            <ul>
+                <li><a href="/">Память сквозь время</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="/map/">Карта</a></li>
+            </ul>
+    </div>
+</header>
+<body>
+<div class="page-container">
+
+  <!-- Боковой столбик -->
+  <aside class="sidebar">
+    <ul>
+        <li><a href="#chronology" class="bold-link">Хронология событий:</a></li>
+      <li><a href="#year-1941">1941</a></li>
+      <li><a href="#year-1942">1942</a></li>
+        <li><a href="#year-1943">1943</a></li>
+      <li><a href="#year-1944">1944</a></li>
+        <li><a href="#year-1945">1945</a></li>
+      <li><a href="/map/" class="bold-link">Интерактивная карта</a></li>
+      <li><a href="/test/" class="bold-link">Пройти тест</a></li>
+    </ul>
+  </aside>
+
+  <!-- Основное содержимое страницы -->
+  <main class="main-content">
+      {% block content %}{% endblock %}
+    </main>
+</div>
+</body>
+<footer class="site-footer">
+    <h1 class="h3footer">Помним. Гордимся. Чтим.</h1>
+</footer>
+</html>

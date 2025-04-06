@@ -1,0 +1,94 @@
+{% extends "main/base4.html" %}
+{% block title %}
+Хронология
+{% endblock %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/timeline.css' %}">
+<h1>Память сквозь время: 1941-1945 Великая Отечественная Война</h1>
+<p>Восемь десятилетий отделяют нас от того дня, когда над Рейхстагом взвилось Знамя Победы, возвестив миру о триумфе добра над злом, о мужестве и стойкости советского народа в Великой Отечественной войне. Время неумолимо, но память о тех трагических и героических годах не стирается, а лишь крепнет в сердцах новых поколений.</p>
+
+<p>Великая Отечественная война – это не просто страница истории, это часть нашей национальной идентичности, выкованная в огне сражений. Это история о беспримерном героизме солдат и офицеров, о стойкости тружеников тыла, о самоотверженной борьбе партизан и подпольщиков. Это история о горе и утратах, о боли и надежде, о вере в Победу, которая дала силы выстоять и победить.</p>
+
+<p>В те страшные годы на защиту Родины встали все – от мала до велика. Каждый внес свой вклад в общее дело, каждый приближал долгожданный день Победы.</p>
+
+<p>В 2025 году исполняется 80 лет со дня Великой Победы. Мы помним каждого солдата, не вернувшегося с поля боя, каждую жертву фашистских зверств, каждого, кто отдал жизнь за свободу и независимость нашей Родины.</p>
+
+
+<p>80 лет Великой Победы – это не просто юбилейная дата, это повод еще раз вспомнить о цене мира, о важности единства и сплоченности, о необходимости беречь нашу Родину и защищать ее от любых угроз.</p>
+
+<p>Здесь вы сможете увидеть хронологию основных событий Великой Отечественной войны, изучить историю городов-героев на интерактивной карте и пройти тест на знание истории того времени.</p>
+
+<h1 id="chronology">Хронология событий</h1>
+<h1 id="year-1941">1941 год</h1>
+<div class="timeline">
+    {% for event in war1941 %}
+    <div class="container">
+        <div class="content">
+            {% if event.image %}
+                <img src="{{event.image.url}}">
+            {% endif %}
+            <h2 class="year">{{ event.month }}</h2>
+            <p class="description">{{ event.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<h1 id="year-1942">1942 год</h1>
+<div class="timeline">
+    {% for event in war1942 %}
+    <div class="container">
+        <div class="content">
+            {% if event.image %}
+                <img src="{{event.image.url}}">
+            {% endif %}
+            <h2 class="year">{{ event.month }}</h2>
+            <p class="description">{{ event.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<h1 id="year-1943">1943 год</h1>
+<div class="timeline">
+    {% for event in war1943 %}
+    <div class="container">
+        <div class="content">
+            {% if event.image %}
+                <img src="{{event.image.url}}">
+            {% endif %}
+            <h2 class="year">{{ event.month }}</h2>
+            <p class="description">{{ event.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<h1 id="year-1944">1944 год</h1>
+<div class="timeline">
+    {% for event in war1944 %}
+    <div class="container">
+        <div class="content">
+            {% if event.image %}
+                <img src="{{event.image.url}}">
+            {% endif %}
+            <h2 class="year">{{ event.month }}</h2>
+            <p class="description">{{ event.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<section><h1 id="year-1945">1945 год</h1>
+    <div class="timeline">
+        {% for event in war1945 %}
+        <div class="container">
+            <div class="content">
+                {% if event.image %}
+                    <img src="{{ event.image.url }}">
+                {% endif %}
+                <h2 class="year">{{ event.month }}</h2>
+                <p class="description">{{ event.description }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+</section>
+{% endblock %}

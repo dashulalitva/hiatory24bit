@@ -1,0 +1,22 @@
+{% extends "main/base4.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/timeline.css' %}">
+    <h1>{{ test.title }}</h1>
+    <p>{{ test.description }}</p>
+
+    <form method="post">
+        {% csrf_token %}
+        {% for question in questions %}
+            <h2>{{ question.text }}</h2>
+            {% for answer in question.answers.all %}
+                <div class="radio-input">
+                    <input type="radio" name="question_{{question.id}}" id="answer_{{ answer.id }}" value="{{ answer.id }}">
+                    <label for="answer_{{ answer.id }}">{{ answer.text }}</label><br>
+                </div>
+            {% endfor %}
+            <br>
+        {% endfor %}
+        <button type="submit">Завершить тест</button>
+    </form>
+{% endblock %}

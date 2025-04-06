@@ -1,0 +1,164 @@
+body {margin: 0; padding: 0;}
+
+h1 {
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1.7;
+    padding-left: 300px;
+    padding-right: 300px;
+    color: #666666;
+    text-align: justify;
+}
+h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.map {
+	position: relative;
+	text-align: center;
+}
+
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.part {
+	opacity: .3;
+}
+
+.part:hover {
+	transition: opacity .2s ease;
+	opacity: .5;
+	cursor: pointer;
+}
+
+
+.description {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    left: 300px;
+    top: 20px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.description img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.description h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.side-image {
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: 100%;
+    z-index: -1;
+}
+
+.side-image.left {
+    left: 0;
+}
+
+.side-image.right {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+@media (max-width: 768px) {
+    .side-image {
+        display: none;
+    }
+    .map {
+        padding: 10px;
+    }
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.side-image {
+    top: 0;
+    height: 100vh;
+    width: auto;
+    z-index: -1;
+}
+
+.side-image.left {
+    left: 0;
+    margin-top: 100px;
+}
+
+.side-image.right {
+    right: 0;
+    transform: scaleX(-1);
+    margin-top: 100px;
+}
+.site-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    position: fixed;
+}
+
+.container-inner {
+    background-color: #89171F;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.first-paragraph {
+    margin-top: 100px;
+}
+a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #FF9957;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.site-footer {
+    background-color: #89171F;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+}
+.h3footer {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #FF9957;
+  font-weight: bold;
+  font-size: 1.4em;
+}
