@@ -10,7 +10,23 @@
 3. 
 
 ## Инструкция по запуску
-Откройте скачанный файл main.py с помощью IDE для Python. Цифры на клавиатуре используются для выбора действий.
+Алгоритм запуска программы:Откройте любой редактор кода, например: PyCharm, VS Code и другие. После этого зайдите в поле Terminal и скачайте нужные библиотеки с помощью команд:
 
+pip install django
 
-![thisshitlaced](https://s1.iconbird.com/ico/0912/ColorfulMorningIconSet/w256h2561348316878Cheat.png)
+pip install requests
+
+pip install beautifulsoup4
+
+pip install djangorestframework
+
+python -m pip install Pillow
+
+Далее введите в терминал следующие строки:
+
+cd *саша, что писать?*
+
+python manage.py runserver
+
+Далее переходите по появившейся в терминале ссылке. Вам откроется сайт, на котором Вы можете узнать много нового о Великой Отечественной Войне..
+
