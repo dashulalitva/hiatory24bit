@@ -24,7 +24,8 @@ python -m pip install Pillow
 
 Далее введите в терминал следующие строки:
 
-cd *саша, что писать?*
+cd War
+cd war
 
 python manage.py runserver
 
