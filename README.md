@@ -10,15 +10,8 @@
 
 
 ## Инструкция по запуску
-Алгоритм запуска программы:Откройте любой редактор кода, например: PyCharm, VS Code и другие. После этого зайдите в поле Terminal и скачайте нужные библиотеки с помощью команд:
-
-pip install Django
-
-pip install requests
-
-pip install beautifulsoup4
-
-python -m pip install Pillow
+Алгоритм запуска программы:Откройте любой редактор кода, например: PyCharm, VS Code и другие. После этого зайдите в поле Terminal и напишите команду pip install -r requirements.txt
+    
 
 Далее введите в терминал следующие строки:
 
